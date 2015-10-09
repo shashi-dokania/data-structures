@@ -3,11 +3,13 @@
 // ------------------------
 // Instantiate a new graph
 var Graph = function() {
+  this.graph = {};
 };
 
 // ------------------------
 // Add a node to the graph, passing in the node's value.
 Graph.prototype.addNode = function(node) {
+
 };
 
 // ------------------------

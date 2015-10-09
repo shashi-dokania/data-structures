@@ -1,4 +1,4 @@
-var Stack = function(storage, length) {
+var Stack = function() {
   this.storage = {};
   this.length = 0; 
 };
@@ -21,7 +21,7 @@ var Stack = function(storage, length) {
     }
     return result;
   };
-  var stack = new Stack(storage, length);
+  var stack = new Stack();
 
 
 
