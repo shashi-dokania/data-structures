@@ -29,12 +29,12 @@ var LinkedList = function() {
   };
 
   list.contains = function(target) {
-    
-    while (this.head) {
-      if (this.head.value === target) {
+    var currentHead = this.head;
+    while (currentHead) {
+      if (currentHead.value === target) {
         return true;
       }
-      this.head = this.head.next;
+      currentHead = currentHead.next;
     }
     return false;
   };
@@ -54,6 +54,5 @@ var Node = function(value) {
 /*
  * Complexity: What is the time complexity of the above functions?
  addToTail : O(1) - constant
- 
-
  */
+
